@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+
+
+/* ESTILOS GENERALES DE LA WEB */
+
+body{
+    background-color:  #1d1e22;
+    font-family: 'Lora', serif;
+}
+h1,h2,h3{
+    color: white;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h1{
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 7rem;
+}
+
+nav{
+    border-bottom: white 3px solid;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+/* --CIERRE-- */
+
+
+
+/* ESTILOS NAVBAR TODAS LAS WEBS */
+
+.navbar-brand{
+    margin-left: 4%;
+    margin-right: -4%;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.navbar-toggler-icon{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 3rem;
+    color: white;
+    opacity: 1;
+}
+
+.nav-item a:hover{
+    color: white;
+    opacity: 1;
+}
+
+.navbar-collapse{
+    justify-content: center;
+}
+
+.navbar-nav{
+    font-family: 'Cinzel', serif;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.logotipo2, .logotipo1{
+    width: 10rem;
+}
+
+/* --CIERRE-- */
+
+
+
+/* ESTILOS INDEX MAIN INICIO */
+
+.s1-index{
+    background-image: url(../images/gym8.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 3px white solid;
+}
+
+.h1I{
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+/* ESTILOS INDEX MAIN TIENDA */
+
+.card-body{
+    padding: 0;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+    justify-content: center;
+}
+
+.list-group{
+    display: block;
+}
+
+.card{
+    border: 6px black solid;
+    margin: 1.4rem;
+    background-color: #212529;
+    text-align: center;
+    align-items: center;
+}
+
+.card-img-top{
+    border-bottom: 6px black solid;
+}
+
+.card-title{
+    border-bottom: 6px black solid;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.list-group-item{
+    border: 0px solid black;
+    background-color: #212529;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* --CIERRE-- */
+
+
+
+/* ESTILOS SOBRE NOSOTROS MAIN INICIO*/
+
+.s1-sobreN{
+    background-image: url(../images/gym9.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 3px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.psni{
+    color: white;
+    font-size: 1.4rem;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.h1Sn{
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+/* ESTILO SOBRE NOSOTROS MAIN HISTORIA */
+
+.rowHistoria{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.h2Sn{
+    text-align: center;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.psnh{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    text-align: justify;
+}
+
+/* --CIERRE-- */
+
+
+
+/* ESTILOS ACTIVIDADES MAIN INICIO */
+
+.s1-act{
+    background-image: url(../images/gym9.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 3px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h1A{
+    text-shadow: 0.1em 0.1em 0.1em black;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* ESTILOS ACTIVIDADES MAIN SECTION */
+
+.actbox{
+    display: flex;
+    justify-content: center;
+    border: white solid 3px;
+    margin: 0.9rem;
+    color: white;
+    opacity: 0.65;
+    padding: 4%;
+}
+
+.actbox:hover{
+    opacity: 1;
+    transform: scale(1.05, 1.05);
+    transition-duration: 0.65s;
+}
+
+/* --CIERRE-- */
+
+
+
+/* FOOTER PARA TODAS LAS WEBS */
+
+footer{
+    border-top: 3px solid white;
+}
+
+.menuliR{
+    display: inline-block;
+    margin: 0.75rem;
+}
+
+.menu-redes{
+    margin: 0.5rem;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.imgredes{
+    width: 60px;
+}
+
+/* --CIERRE-- */
+
+
+
+/* MEDIA QUERIES GENERALES */
+
+@media screen and (min-width:988px){
+   
+    /* ESTILOS GENERALES */
+
+    .col-lg-4{
+        width: 28.7174%;
+    }
+
+    /* ESTILOS NAVBAR */
+    .nav-item{
+        opacity: 0.75;
+    }
+    
+    .nav-item:hover{
+        opacity: 1;
+        transform: scale(1.15, 1.15);
+        transition-duration: 0.5s;
+    }
+
+    .card:hover{
+        opacity: 1;
+        transform: scale(1.02, 1.02);
+        transition-duration: 0.65s;
+    }
+
+    .logotipo1{
+        display: none;
+    }
+
+    /*  */
+}
+
+@media screen and (max-width: 988px){
+    
+    /* ESTILOS INDEX MAIN TIENDA */
+
+    .marmar{
+        margin: 10px;
+    }
+
+    /* ESTILOS NAVBAR */
+    .nav-item{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-align: center;
+    }
+    .navbar-nav{
+        border-top: white solid 3px;
+        display: block;
+        margin-bottom: 1%;
+    }
+   
+    .logotipo2{
+        display: none;
+    }
+
+    /*  */
+}
+
+@media screen and (max-width: 768px){
+    
+    /* ESTILOS GENERALES */
+
+    h1{
+        text-align: center;
+    }
+
+    /*  */
+}
+
+@media screen and (min-width: 1150px){
+    
+    /* ESTILOS NAVBAR */
+
+    .navbar-nav li a{
+        font-size: 2rem;
+    }
+    .navbar-nav li a{
+        margin-left: 1.5vw;
+    }
+
+    /*  */
+}
+
+@media screen and (min-width: 1340px){
+    
+    /* ESTILOS NAVBAR */
+
+    .navbar-nav li a{
+        margin-left: 2.5vw;
+    }
+
+    /*  */
+}
+
+@media screen and (max-width:1160px){
+
+    /* ESTILOS SN MAIN INICIO */
+
+    .h1Sn{
+        font-size: 5rem;
+    }
+
+    .psni{
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /*  */
+}
+
+
+/* --CIERRE-- */
