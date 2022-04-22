@@ -1,0 +1,87 @@
+/* ESTILOS ACTIVIDADES MAIN INICIO */
+main{
+    section{
+        .s1-act{
+            background-image: url(../images/gym9.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 3px white solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .h1A{
+            text-shadow: 0.1em 0.1em 0.1em black;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    section{
+        .actbox{
+            display: flex;
+            justify-content: center;
+            border: white solid 3px;
+            margin: 0.9rem;
+            color: white;
+            opacity: 0.65;
+            padding: 4%;
+            background-image: url(../images/gymact.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            &:hover{
+                opacity: 1;
+                transform: scale(1.05, 1.05);
+                transition-duration: 0.65s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 988px){
+
+    main{
+        section{
+            .h1A{
+                font-size: 5rem;
+            }
+        }
+
+        section{
+            .actbox{
+                margin: 0.5rem;
+            } 
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    main{
+        section{
+            .actbox{
+                margin: 0.5rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 556px){
+
+    main{
+        section{
+            .h1A{
+                font-size: 3rem;
+            }
+        }
+    }
+
+}

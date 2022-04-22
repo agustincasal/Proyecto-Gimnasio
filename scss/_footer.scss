@@ -1,0 +1,47 @@
+footer{
+    border-top: 3px solid white;
+
+    .menu-redes{
+        margin: 0.5rem;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .menuliR{
+            display: inline-block;
+            margin: 0.75rem;
+
+            .imgredes{
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px){
+
+    footer{
+        .menu-redes{
+            .menuliR{
+
+                .imgredes{
+                    width: 45px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    footer{
+    
+        .menu-redes{
+            justify-content: space-around;
+            margin-right: 9%;
+        }
+    }
+
+}

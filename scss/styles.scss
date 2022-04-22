@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color:  #1d1e22;
+    font-family: 'Lora', serif;
+}
+
+h1{
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 7rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h1,h2,h3{
+    color: white;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+    justify-content: center;
+}
+
+
+
+@import "header";
+@import "mainIndex";
+@import "mainActividades";
+@import "mainSedes";
+@import "mainSobreN";
+@import "mainContactos";
+@import "footer";
+
+
+
+@media screen and (min-width:988px){
+
+    .col-lg-4{
+        width: 28.7174%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    h1{
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,67 @@
+/* ESTILOS SOBRE NOSOTROS MAIN INICIO*/
+main{
+    div{
+        .s1-sobreN{
+            background-image: url(../images/gym9.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 3px white solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            
+            .h1Sn{
+                text-shadow: 0.1em 0.1em 0.1em black;
+            }
+
+            .psni{
+                color: white;
+                font-size: 1.4rem;
+                text-shadow: 0.1em 0.1em 0.1em black;
+            }
+        }
+    }
+
+    .rowHistoria{
+        display: flex;
+        flex-flow: column wrap;
+
+        article{
+            .h2Sn{
+                text-align: center;
+                margin-top: 1.5%;
+                margin-bottom: 1.5%;
+            }
+
+            .psnh{
+                color: white;
+                font-size: 1.2rem;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 2%;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1160px){
+
+    main{
+        div{
+            .h1Sn{
+                font-size: 5rem;
+            }
+        
+            .psni{
+                text-align: center;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+        
+        }
+    }
+}

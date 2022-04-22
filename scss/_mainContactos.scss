@@ -1,0 +1,47 @@
+main{
+    div{
+        .s1-act{
+            background-image: url(../images/gym9.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 3px white solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+
+            .h1C{
+                text-shadow: 0.1em 0.1em 0.1em black;
+            }
+        }
+    }
+
+    div{
+        section{
+            .h2for{
+                margin: 1.2rem;
+                text-align: center;
+                color: white;
+            }
+            
+            iframe{
+                width: 90%;
+                height: 300px;
+                margin: 30px;
+                margin-top: 0px;
+            }
+            
+            .ulC{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                color: white;
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+/* ESTILOS INDEX MAIN INICIO */
+main{
+    div{
+        .s1-index{
+            background-image: url(../images/gym8.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 3px white solid;
+
+        .h1I{
+            text-shadow: 0.1em 0.1em 0.1em black;
+        }
+        }
+    }
+
+    div{
+        div{
+            .card{
+                border: 6px black solid;
+                margin: 1.4rem;
+                background-color: #212529;
+                text-align: center;
+                align-items: center;
+
+                div{
+                    .card-img-top{
+                        border-bottom: 6px black solid;
+                    }
+
+                    .card-body{
+                        padding: 0;
+
+                        .card-title{
+                            border-bottom: 6px black solid;
+                            padding-bottom: 0.5rem;
+                            padding-top: 0.5rem;
+                        }
+                        
+                        .list-group{
+                            display: block;
+
+                            .list-group-item{
+                                border: 0px solid black;
+                                background-color: #212529;
+                                color: white;
+                                font-size: 1.1rem;
+                            }
+                        }                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 988px){
+    
+    main{
+        .marmar{
+            margin: 10px;
+        }
+    }
+
+}
