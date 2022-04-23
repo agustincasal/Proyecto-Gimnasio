@@ -1,117 +1,152 @@
-/* ESTILOS NAVBAR TODAS LAS WEBS */
+header{
+    nav{
+        border-bottom: white 3px solid;
 
-nav{
-    border-bottom: white 3px solid;
+        div{
+            .navbar-brand{
+                margin-left: 4%;
+                margin-right: -4%;
+
+                .logotipo1{
+                    width: 10rem;
+                }
+            }
+
+            button{
+                .navbar-toggler-icon{
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    margin-right: 3rem;
+                    color: white;
+                    opacity: 1;
+                }
+            }
+
+            .navbar-collapse{
+                justify-content: center;
+
+                .navbar-nav{
+                    font-family: 'Cinzel', serif;
+                    list-style-type: none;
+                    align-items: center;
+
+                    .nav-item-brand{
+
+                        .navbar-brand{
+                            .logotipo2{
+                                width: 10rem;
+                            }
+                        }
+                    }
+
+                    .nav-item{
+                        .nav-link{
+                            color: white;
+                            font-size: 1.6rem;
+                        }
+
+                        &:hover{
+                            color: white;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.navbar-brand{
-    margin-left: 4%;
-    margin-right: -4%;
-}
-
-.nav-link{
-    color: white;
-    font-size: 1.6rem;
-}
-
-.navbar-toggler-icon{
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-right: 3rem;
-    color: white;
-    opacity: 1;
-}
-
-.nav-item a:hover{
-    color: white;
-    opacity: 1;
-}
-
-.navbar-collapse{
-    justify-content: center;
-}
-
-.navbar-nav{
-    font-family: 'Cinzel', serif;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-.logotipo2, .logotipo1{
-    width: 10rem;
-}
 
 @media screen and (min-width: 1150px){
-    
-    /* ESTILOS NAVBAR */
-
-    .navbar-nav li a{
-        font-size: 1.7rem;
+    header{
+        nav{
+            div{
+                div{
+                    .navbar-nav{
+                        li{
+                            a{
+                                font-size: 1.7rem;
+                                margin-left: 1.5vw;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
     }
-    .navbar-nav li a{
-        margin-left: 1.5vw;
-    }
-
-    /*  */
 }
 
 @media screen and (min-width: 1340px){
-    
-    /* ESTILOS NAVBAR */
-
-    .navbar-nav li a{
-        margin-left: 2.5vw;
+    header{
+        nav{
+            div{
+                div{
+                    .navbar-nav{
+                        li{
+                            a{
+                                margin-left: 2.5vw;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
     }
-
-    /*  */
-}
+}    
 
 @media screen and (max-width: 988px){
-    
-    /* ESTILOS NAVBAR */
-    .nav-item{
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        text-align: center;
-    }
-    .navbar-nav{
-        border-top: white solid 3px;
-        display: block;
-        margin-bottom: 1%;
-    }
-   
-    .logotipo2{
-        display: none;
-    }
+    header{
+        nav{
+            div{
+                div{
+                    .navbar-nav{
+                        border-top: white solid 3px;
+                        display: block;
+                        margin-bottom: 1%;
 
-    /*  */
-}
+                        .nav-item{
+                            margin-left: 0.5rem;
+                            margin-right: 0.5rem;
+                            text-align: center;
+                        }
+
+                        .nav-item-brand{
+                            .logotipo2{
+                                display: none;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}      
 
 @media screen and (min-width:988px){
+    header{
+        nav{
+            div{
+                .navbar-brand{
 
-    /* ESTILOS NAVBAR */
-    .nav-item{
-        opacity: 0.75;
-    }
-    
-    .nav-item:hover{
-        opacity: 1;
-        transform: scale(1.15, 1.15);
-        transition-duration: 0.5s;
-    }
+                    .logotipo1{
+                        display: none;
+                    } 
+                }
 
-    .card:hover{
-        opacity: 1;
-        transform: scale(1.02, 1.02);
-        transition-duration: 0.65s;
-    }
+                div{
+                    .navbar-nav{
+                        .nav-item{
+                            opacity: 0.75;
 
-    .logotipo1{
-        display: none;
+                            &:hover{
+                                opacity: 1;
+                                transform: scale(1.15, 1.15);
+                                transition-duration: 0.5s;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
     }
-
-    /*  */
 }
-/* --CIERRE-- */

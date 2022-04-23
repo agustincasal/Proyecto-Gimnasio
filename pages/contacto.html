@@ -35,7 +35,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li>
+                <li class="nav-item-brand">
                   <a class="navbar-brand" href="../index.html"><img class="logotipo2" src="../images/logotipo.png" alt="logotipo"></a>
                 </li>
                 <li class="nav-item">
@@ -98,12 +98,30 @@
             </section>
         </div>
 
-        <div class="row">
-          <form>
-            
-          </form>
-        </div>
-        
+        <form class="row">
+          <legend class="legend col-12">Formulario de Contacto</legend>      
+
+          <div class="col-12">
+            <input class="col-12 col-lg-5" type="text" name="name" placeholder="Nombre" required>
+
+            <input class="col-12 col-lg-5 mt-2" type="text" name="surname" placeholder="Apellido" required>
+          </div>
+
+          <div class="col-12">
+            <input class="col-12 col-lg-10" type="email" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="col-12">
+            <textarea class="col-12 col-lg-10" name="coment" id="coment" placeholder="Mensaje"></textarea>
+          </div>  
+
+          <div class="col-12">
+            <input class="col-12 col-lg-5" type="submit" name="submit" value="Enviar">
+
+            <input class="col-12 col-lg-5" type="reset" name="reset" value="Reset">
+          </div>  
+        </form>
+      
     </main>
 
 
