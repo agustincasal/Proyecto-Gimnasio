@@ -182,6 +182,12 @@ main div div .card div .card-body .list-group .list-group-item {
   }
 }
 
+@media screen and (max-width: 420px) {
+  main div .h1I {
+    font-size: 5rem;
+  }
+}
+
 main section .s1-act {
   background-image: url(../images/gym9.jpg);
   background-attachment: fixed;
@@ -204,16 +210,26 @@ main section .h1A {
 
 main section .actbox {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
   border: white solid 3px;
-  margin: 0.9rem;
+  margin: 1.7rem;
   color: white;
   opacity: 0.65;
-  padding: 4%;
+  padding: 3%;
   background-image: url(../images/gymact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+main section .actbox h2 {
+  font-size: 3rem;
+}
+
+main section .actbox .pacts {
+  font-size: 1rem;
 }
 
 main section .actbox:hover {
@@ -241,6 +257,9 @@ main section .actbox:hover {
   main section .h1A {
     font-size: 3rem;
   }
+  main section .actbox {
+    font-size: 2rem;
+  }
 }
 
 main div .s1-sedes {
@@ -266,10 +285,22 @@ main div div h2 {
 }
 
 main div div .carousel {
-  margin-left: 12%;
-  margin-right: 12%;
   margin-bottom: 2%;
   margin-top: 2%;
+}
+
+@media screen and (max-width: 675px) {
+  main div div h2 {
+    font-size: 2rem;
+    margin: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  main div div .carousel {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 main div .s1-sobreN {
@@ -323,6 +354,12 @@ main .rowHistoria article .psnh {
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  main div .h1Sn {
+    font-size: 3.5rem;
   }
 }
 
@@ -419,6 +456,23 @@ footer .menu-redes {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+footer .menu-redes .btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+}
+
+footer .menu-redes .btn-whatsapp .whatsapp {
+  width: 70px;
 }
 
 footer .menu-redes .menuliR {

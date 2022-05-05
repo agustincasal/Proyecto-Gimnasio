@@ -8,6 +8,23 @@ footer{
         flex-flow: row wrap;
         justify-content: center;
 
+        .btn-whatsapp {
+            display: block;
+            width: 70px;
+            height: 70px;
+            color: #fff;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            line-height: 80px;
+            text-align: center;
+            z-index: 999;
+
+            .whatsapp{
+                width: 70px;
+            }
+        }
+
         .menuliR{
             display: inline-block;
             margin: 0.75rem;

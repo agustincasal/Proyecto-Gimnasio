@@ -1,17 +1,9 @@
 main{
     div{
         .s1-act{
-            background-image: url(../images/gym9.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            width: 100vw;
-            border-bottom: 3px white solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; 
-
+            @include fondo-main-inicio();
+            @extend .fondosMainNoIndex;
+            
             .h1C{
                 text-shadow: 0.1em 0.1em 0.1em black;
             }
@@ -46,7 +38,7 @@ main{
     }
 
     form{
-        background-color: rgba(255, 255, 255, 0.021);
+        background-color: $color-form;
 
         .legend{
             font-size: 3rem;

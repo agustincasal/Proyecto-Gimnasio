@@ -1,16 +1,8 @@
 main{
     div{
         .s1-sobreN{
-            background-image: url(../images/gym9.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            width: 100vw;
-            border-bottom: 3px white solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; 
+            @include fondo-main-inicio();
+            @extend .fondosMainNoIndex;
             
             .h1Sn{
                 text-shadow: 0.1em 0.1em 0.1em black;
@@ -61,6 +53,16 @@ main{
                 margin-right: 2%;
             }
         
+        }
+    }
+}
+
+@media screen and (max-width: 545px){
+    main{
+        div{
+            .h1Sn{
+                font-size: 3.5rem;
+            }
         }
     }
 }

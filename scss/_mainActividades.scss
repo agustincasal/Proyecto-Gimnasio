@@ -1,16 +1,8 @@
 main{
     section{
         .s1-act{
-            background-image: url(../images/gym9.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            width: 100vw;
-            border-bottom: 3px white solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include fondo-main-inicio();
+            @extend .fondosMainNoIndex;
         }
         .h1A{
             text-shadow: 0.1em 0.1em 0.1em black;
@@ -23,17 +15,26 @@ main{
     section{
         .actbox{
             display: flex;
+            flex-flow: column wrap;
             justify-content: center;
+            align-items: center;
             border: white solid 3px;
-            margin: 0.9rem;
+            margin: 1.7rem;
             color: white;
             opacity: 0.65;
-            padding: 4%;
+            padding: 3%;
             background-image: url(../images/gymact.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+            
+            h2{
+                font-size: 3rem;
+            }
 
+            .pacts{
+                font-size: 1rem;
+            }
             &:hover{
                 opacity: 1;
                 transform: scale(1.05, 1.05);
@@ -74,13 +75,14 @@ main{
 }
 
 @media screen and (max-width: 556px){
-
     main{
         section{
             .h1A{
                 font-size: 3rem;
             }
+            .actbox{
+                font-size: 2rem;
+            }
         }
     }
-
 }
