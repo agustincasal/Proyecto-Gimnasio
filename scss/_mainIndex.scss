@@ -1,7 +1,7 @@
 main{
     div{
         .s1-index{
-            @include fondo-main-inicio(url(../images/gym8.jpg));
+            @include fondo-main-inicio($imagen-fondos: url(../images/gym8.jpg));
 
         .h1I{
             text-shadow: 0.1em 0.1em 0.1em black;

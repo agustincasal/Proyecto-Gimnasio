@@ -98,6 +98,19 @@ header{
     header{
         nav{
             div{
+                button{
+                    .navbar-toggler-icon{
+                        margin-right: 1rem;
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+                .navbar-brand{
+                    .logotipo1{
+                        width: 5rem;
+                        margin-left: 6%;
+                    }
+                }
                 div{
                     .navbar-nav{
                         border-top: white solid 3px;

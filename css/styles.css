@@ -33,6 +33,12 @@ h1, h2, h3 {
   justify-content: center;
 }
 
+.fondosMainNoIndex, main section .s1-act, main div .s1-sedes, main div .s1-sobreN, main div .s1-act {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header nav {
   border-bottom: white 3px solid;
 }
@@ -92,6 +98,15 @@ header nav div .navbar-collapse .navbar-nav .nav-item:hover {
 }
 
 @media screen and (max-width: 988px) {
+  header nav div button .navbar-toggler-icon {
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  header nav div .navbar-brand .logotipo1 {
+    width: 5rem;
+    margin-left: 6%;
+  }
   header nav div div .navbar-nav {
     border-top: white solid 3px;
     display: block;
@@ -196,9 +211,6 @@ main section .s1-act {
   height: 100vh;
   width: 100vw;
   border-bottom: 3px white solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 main section .h1A {
@@ -270,9 +282,6 @@ main div .s1-sedes {
   height: 100vh;
   width: 100vw;
   border-bottom: 3px white solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 main div .h1Sn {
@@ -311,9 +320,6 @@ main div .s1-sobreN {
   height: 100vh;
   width: 100vw;
   border-bottom: 3px white solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 main div .s1-sobreN .h1Sn {
@@ -371,9 +377,6 @@ main div .s1-act {
   height: 100vh;
   width: 100vw;
   border-bottom: 3px white solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 main div .s1-act .h1C {

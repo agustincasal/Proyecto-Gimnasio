@@ -1,7 +1,6 @@
 $color-form: rgba(255, 255, 255, 0.021);
-$imagen-fondos: url(../images/gym9.jpg);
 
-@mixin fondo-main-inicio(){
+@mixin fondo-main-inicio($imagen-fondos: url(../images/gym9.jpg)){
     background-image: $imagen-fondos;
     background-attachment: fixed;
     background-repeat: no-repeat;
