@@ -233,7 +233,6 @@ main section .actbox {
   background-image: url(../images/gymact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 main section .actbox h2 {
@@ -242,12 +241,65 @@ main section .actbox h2 {
 
 main section .actbox .pacts {
   font-size: 1rem;
+  display: none;
 }
 
 main section .actbox:hover {
   opacity: 1;
-  transform: scale(1.05, 1.05);
-  transition-duration: 0.65s;
+  transform: rotatey(180deg) scale(1.05, 1.05);
+  transition-duration: 1s;
+  background-color: black;
+}
+
+main section .actbox:hover .h2display {
+  display: none;
+}
+
+main section .actbox:hover .pacts {
+  display: block;
+  transform: rotatey(180deg) scale(1.05, 1.05);
+  transition-duration: 1s;
+}
+
+main section .musculacion:hover {
+  background-image: url(../images/);
+}
+
+main section .crossfit:hover {
+  background-image: url(../images/);
+}
+
+main section .boxeo:hover {
+  background-image: url(../images/);
+}
+
+main section .cycling:hover {
+  background-image: url(../images/);
+}
+
+main section .funcional:hover {
+  background-image: url(../images/);
+}
+
+main section .running:hover {
+  background-image: url(../images/);
+}
+
+main section .bodypump:hover {
+  background-image: url(../images/);
+}
+
+main section .pilates:hover {
+  background-image: url(../images/);
+}
+
+main section .zumba:hover {
+  background-image: url(../images/);
+}
+
+main section .prox:hover {
+  transform: rotatey(0deg) scale(1.05, 1.05);
+  transition-duration: 1s;
 }
 
 @media screen and (max-width: 988px) {
@@ -403,11 +455,16 @@ main div section .ulC {
   text-align: center;
   color: white;
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 4%;
+  padding-left: 0;
 }
 
 main form {
   background-color: rgba(255, 255, 255, 0.021);
+}
+
+main form .col-12 {
+  width: 98%;
 }
 
 main form .legend {
@@ -419,6 +476,7 @@ main form .legend {
 
 main form div {
   margin: 0.5rem;
+  text-align: center;
 }
 
 main form div input {

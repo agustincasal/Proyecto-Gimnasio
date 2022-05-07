@@ -23,10 +23,9 @@ main{
             color: white;
             opacity: 0.65;
             padding: 3%;
-            background-image: url(../images/gymact.jpg);
+            background-image: $imagen-act;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
             
             h2{
                 font-size: 3rem;
@@ -34,11 +33,85 @@ main{
 
             .pacts{
                 font-size: 1rem;
+                display: none;
             }
+
             &:hover{
                 opacity: 1;
-                transform: scale(1.05, 1.05);
-                transition-duration: 0.65s;
+                transform: rotatey(180deg) scale(1.05, 1.05);
+                transition-duration: 1s;
+                background-color: black;
+                
+                .h2display{
+                    display: none;
+                }
+
+                .pacts{
+                    display: block;
+                    transform: rotatey(180deg) scale(1.05, 1.05);
+                    transition-duration: 1s;
+                }
+            } 
+        }
+
+        .musculacion{
+            &:hover{
+                background-image: url(../images/);
+            }
+        }
+
+        .crossfit{
+            &:hover{
+                background-image: url(../images/);
+            }
+        } 
+
+        .boxeo{
+            &:hover{
+                background-image: url(../images/);
+            }
+        } 
+
+        .cycling{
+            &:hover{
+                background-image: url(../images/);
+            }
+        } 
+
+        .funcional{
+            &:hover{
+                background-image: url(../images/);
+            }
+        } 
+
+        .running{
+            &:hover{
+                background-image: url(../images/);
+            }
+        }
+
+        .bodypump{
+            &:hover{
+                background-image: url(../images/);
+            }
+        } 
+
+        .pilates{
+            &:hover{
+                background-image: url(../images/);
+            }
+        }
+
+        .zumba{
+            &:hover{
+                background-image: url(../images/);
+            }
+        }
+
+        .prox{
+            &:hover{
+                transform: rotatey(0deg) scale(1.05, 1.05);
+                transition-duration: 1s;
             }
         }
     }
