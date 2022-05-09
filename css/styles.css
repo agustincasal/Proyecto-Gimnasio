@@ -228,7 +228,6 @@ main section .actbox {
   border: white solid 3px;
   margin: 1.7rem;
   color: white;
-  opacity: 0.65;
   padding: 3%;
   background-image: url(../images/gymact.jpg);
   background-repeat: no-repeat;
@@ -237,6 +236,7 @@ main section .actbox {
 
 main section .actbox h2 {
   font-size: 3rem;
+  text-shadow: 0.1em 0.1em 0.1em black;
 }
 
 main section .actbox .pacts {
@@ -245,7 +245,6 @@ main section .actbox .pacts {
 }
 
 main section .actbox:hover {
-  opacity: 1;
   transform: rotatey(180deg) scale(1.05, 1.05);
   transition-duration: 1s;
   background-color: black;
@@ -261,43 +260,85 @@ main section .actbox:hover .pacts {
   transition-duration: 1s;
 }
 
+main section .musculacion {
+  background-image: url(../images/musculaciongg.jpg);
+}
+
 main section .musculacion:hover {
   background-image: url(../images/);
+}
+
+main section .crossfit {
+  background-image: url(../images/crossfitgg.jpg);
 }
 
 main section .crossfit:hover {
   background-image: url(../images/);
 }
 
+main section .boxeo {
+  background-image: url(../images/boxeogg.jpg);
+}
+
 main section .boxeo:hover {
   background-image: url(../images/);
+}
+
+main section .cycling {
+  background-image: url(../images/cyclinggg.jpg);
 }
 
 main section .cycling:hover {
   background-image: url(../images/);
 }
 
+main section .funcional {
+  background-image: url(../images/funcional.webp);
+}
+
 main section .funcional:hover {
   background-image: url(../images/);
+}
+
+main section .running {
+  background-image: url(../images/runninggg.jpg);
 }
 
 main section .running:hover {
   background-image: url(../images/);
 }
 
+main section .bodypump {
+  background-image: url(../images/bodypumpgg.jpg);
+}
+
 main section .bodypump:hover {
   background-image: url(../images/);
+}
+
+main section .pilates {
+  background-image: url(../images/pilatesgg.jpg);
 }
 
 main section .pilates:hover {
   background-image: url(../images/);
 }
 
+main section .zumba {
+  background-image: url(../images/zumbagg.jpg);
+}
+
 main section .zumba:hover {
   background-image: url(../images/);
 }
 
+main section .prox {
+  background: black;
+  opacity: 0.75;
+}
+
 main section .prox:hover {
+  opacity: 1;
   transform: rotatey(0deg) scale(1.05, 1.05);
   transition-duration: 1s;
 }
@@ -321,8 +362,8 @@ main section .prox:hover {
   main section .h1A {
     font-size: 3rem;
   }
-  main section .actbox {
-    font-size: 2rem;
+  main section .actbox h2 {
+    font-size: 2.4rem;
   }
 }
 

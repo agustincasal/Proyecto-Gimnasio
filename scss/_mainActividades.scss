@@ -21,7 +21,6 @@ main{
             border: white solid 3px;
             margin: 1.7rem;
             color: white;
-            opacity: 0.65;
             padding: 3%;
             background-image: $imagen-act;
             background-repeat: no-repeat;
@@ -29,6 +28,7 @@ main{
             
             h2{
                 font-size: 3rem;
+                text-shadow: 0.1em 0.1em 0.1em black;
             }
 
             .pacts{
@@ -37,7 +37,6 @@ main{
             }
 
             &:hover{
-                opacity: 1;
                 transform: rotatey(180deg) scale(1.05, 1.05);
                 transition-duration: 1s;
                 background-color: black;
@@ -55,61 +54,73 @@ main{
         }
 
         .musculacion{
+            background-image: url(../images/musculaciongg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         }
 
         .crossfit{
+            background-image: url(../images/crossfitgg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         } 
 
         .boxeo{
+            background-image: url(../images/boxeogg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         } 
 
         .cycling{
+            background-image: url(../images/cyclinggg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         } 
 
         .funcional{
+            background-image: url(../images/funcional.webp);
             &:hover{
                 background-image: url(../images/);
             }
         } 
 
         .running{
+            background-image: url(../images/runninggg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         }
 
         .bodypump{
+            background-image: url(../images/bodypumpgg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         } 
 
         .pilates{
+            background-image: url(../images/pilatesgg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         }
 
         .zumba{
+            background-image: url(../images/zumbagg.jpg);
             &:hover{
                 background-image: url(../images/);
             }
         }
 
         .prox{
+            background: black;
+            opacity: 0.75;
             &:hover{
+                opacity: 1;
                 transform: rotatey(0deg) scale(1.05, 1.05);
                 transition-duration: 1s;
             }
@@ -129,7 +140,7 @@ main{
         section{
             .actbox{
                 margin: 0.5rem;
-            } 
+            }
         }
     }
     
@@ -154,7 +165,9 @@ main{
                 font-size: 3rem;
             }
             .actbox{
-                font-size: 2rem;
+                h2{
+                    font-size: 2.4rem;
+                }
             }
         }
     }
