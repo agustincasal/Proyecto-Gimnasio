@@ -5,13 +5,13 @@ main{
             @extend .fondosMainNoIndex;
             
             .h1Sn{
-                text-shadow: 0.1em 0.1em 0.1em black;
+                text-shadow: $sombra;
             }
 
             .psni{
                 color: white;
                 font-size: 1.4rem;
-                text-shadow: 0.1em 0.1em 0.1em black;
+                text-shadow: $sombra;
             }
         }
     }
@@ -19,21 +19,35 @@ main{
     .rowHistoria{
         display: flex;
         flex-flow: column wrap;
+        .h2Sn{
+            text-align: center;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
 
-        article{
-            .h2Sn{
-                text-align: center;
-                margin-top: 1.5%;
-                margin-bottom: 1.5%;
+        div{
+            align-items: center;
+
+            article{
+                .psnh{
+                    color: white;
+                    font-size: $texto;
+                    margin-left: 2%;
+                    margin-right: 4%;
+                    margin-bottom: 2%;
+                    text-align: justify;
+                    strong{
+                        font-weight: normal;
+                    }
+                }
             }
-
-            .psnh{
-                color: white;
-                font-size: 1.2rem;
-                margin-left: 5%;
-                margin-right: 5%;
+            aside{
                 margin-bottom: 2%;
-                text-align: justify;
+                margin-top: 1%;
+                text-align: center;
+                .fotoSN{
+                    width: 27vw;
+                }
             }
         }
     }
@@ -62,6 +76,20 @@ main{
         div{
             .h1Sn{
                 font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 988px){
+    main{
+        .rowHistoria{
+            div{
+                aside{
+                    .fotoSN{
+                        width: 85vw;
+                    }
+                }
             }
         }
     }

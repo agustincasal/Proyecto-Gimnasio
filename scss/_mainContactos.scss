@@ -5,7 +5,7 @@ main{
             @extend .fondosMainNoIndex;
             
             .h1C{
-                text-shadow: 0.1em 0.1em 0.1em black;
+                text-shadow: $sombra;
             }
         }
     }
@@ -39,7 +39,7 @@ main{
     }
 
     form{
-        background-color: $color-form;
+        border-top: 3px solid $bordercolor;
         .col-12{
             width: 98%;
         }
@@ -54,7 +54,7 @@ main{
         div{
             margin: 0.5rem;
             text-align: center;
-            
+
             input{
                 height: 3rem;
             }
@@ -64,7 +64,7 @@ main{
 }
 
 @media screen and (max-width: 988px) {
-    main{
+    main{   
         div{
             .h1C{
                 font-size: 5rem;

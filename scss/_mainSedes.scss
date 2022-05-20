@@ -6,11 +6,22 @@ main{
         }
                         
         .h1Sn{
-            text-shadow: 0.1em 0.1em 0.1em black;
+            text-shadow: $sombra;
         }
     }
 
     div{
+        .psedes{
+            color: white;
+            font-size: $texto;
+            margin-top: 0.8rem;
+            margin-bottom: 1.3rem;
+            text-align: justify;
+
+            strong{
+                font-weight: normal;
+            }
+        }
         div{
             h2{
               font-size: 2.5rem;
@@ -20,6 +31,7 @@ main{
             .carousel{
                 margin-bottom: 2%;
                 margin-top: 2%;
+                border: $bordercolor solid 2px;
             }
         }
     }

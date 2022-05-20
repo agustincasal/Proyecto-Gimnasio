@@ -1,0 +1,28 @@
+main{
+    .error{
+        height: 60vh;
+        .p404{
+            color: white;
+            text-align: center;
+         }
+        .h1404{
+            text-align: center;
+            margin-top: 40vh;
+        }
+    }
+}
+
+@media screen and (max-width: 815px){
+    main{
+        .error{
+            .p404{
+                color: white;
+                text-align: center;
+                font-size: 0.9rem;
+             }
+            .h1404{
+                font-size: 3rem;
+            }
+        }
+    }
+}

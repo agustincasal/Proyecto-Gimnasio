@@ -5,11 +5,6 @@
   text-decoration: none;
 }
 
-body {
-  background-color: #1d1e22;
-  font-family: 'Lora', serif;
-}
-
 h1 {
   margin-left: 6%;
   margin-right: 6%;
@@ -22,6 +17,7 @@ h2 {
 
 h1, h2, h3 {
   color: white;
+  font-family: 'Exo', sans-serif;
 }
 
 .container-fluid {
@@ -65,13 +61,13 @@ header nav div .navbar-collapse {
 }
 
 header nav div .navbar-collapse .navbar-nav {
-  font-family: 'Cinzel', serif;
+  font-family: 'Exo', sans-serif;
   list-style-type: none;
   align-items: center;
 }
 
 header nav div .navbar-collapse .navbar-nav .nav-item-brand .navbar-brand .logotipo2 {
-  width: 10rem;
+  width: 8.5rem;
 }
 
 header nav div .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -137,7 +133,7 @@ header nav div .navbar-collapse .navbar-nav .nav-item:hover {
 }
 
 main div .s1-index {
-  background-image: url(../images/gym8.jpg);
+  background-image: url(../images/sarkogym-fondo1.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,10 +162,47 @@ main div div .card div .card-body {
   padding: 0;
 }
 
+main div div .card div .card-body .layer {
+  position: absolute;
+  background: #FFCE1A;
+  top: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+main div div .card div .card-body .layer:hover {
+  opacity: 0.92;
+  height: 100%;
+  transition: all 550ms;
+}
+
+main div div .card div .card-body .layer span {
+  font-size: 0.75em;
+}
+
+main div div .card div .card-body .layer h3 {
+  opacity: 1;
+  font-size: 4em;
+  font-weight: 600;
+  color: black;
+  width: 90%;
+  margin: 80px auto 0px;
+  border-bottom: 0;
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+
 main div div .card div .card-body .card-title {
   border-bottom: 6px black solid;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+
+main div div .card div .card-body .card-title strong {
+  font-weight: normal;
 }
 
 main div div .card div .card-body .list-group {
@@ -177,10 +210,10 @@ main div div .card div .card-body .list-group {
 }
 
 main div div .card div .card-body .list-group .list-group-item {
-  border: 0px solid black;
+  border: 0px;
   background-color: #212529;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 988px) {
@@ -204,7 +237,7 @@ main div div .card div .card-body .list-group .list-group-item {
 }
 
 main section .s1-act {
-  background-image: url(../images/gym9.jpg);
+  background-image: url(../images/sarkogym-fondo2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,8 +262,7 @@ main section .actbox {
   margin: 1.7rem;
   color: white;
   padding: 3%;
-  background-image: url(../images/gymact.jpg);
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -246,7 +278,7 @@ main section .actbox .pacts {
 
 main section .actbox:hover {
   transform: rotatey(180deg) scale(1.05, 1.05);
-  transition-duration: 1s;
+  transition-duration: 1.5s;
   background-color: black;
 }
 
@@ -260,36 +292,46 @@ main section .actbox:hover .pacts {
   transition-duration: 1s;
 }
 
+main section .col-11 {
+  max-height: 180px;
+  min-height: 180px;
+}
+
+main section .col-11:hover {
+  max-height: 180px;
+  min-height: 180px;
+}
+
 main section .musculacion {
-  background-image: url(../images/musculaciongg.jpg);
+  background-image: url(../images/musculacion.jpg);
 }
 
 main section .musculacion:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .crossfit {
-  background-image: url(../images/crossfitgg.jpg);
+  background-image: url(../images/crossfit.jpg);
 }
 
 main section .crossfit:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .boxeo {
-  background-image: url(../images/boxeogg.jpg);
+  background-image: url(../images/boxeo.jpg);
 }
 
 main section .boxeo:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .cycling {
-  background-image: url(../images/cyclinggg.jpg);
+  background-image: url(../images/cycling.jpg);
 }
 
 main section .cycling:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .funcional {
@@ -297,44 +339,45 @@ main section .funcional {
 }
 
 main section .funcional:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .running {
-  background-image: url(../images/runninggg.jpg);
+  background-image: url(../images/running.jpg);
 }
 
 main section .running:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .bodypump {
-  background-image: url(../images/bodypumpgg.jpg);
+  background-image: url(../images/bodypump.jpg);
 }
 
 main section .bodypump:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .pilates {
-  background-image: url(../images/pilatesgg.jpg);
+  background-image: url(../images/pilates.jpg);
 }
 
 main section .pilates:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .zumba {
-  background-image: url(../images/zumbagg.jpg);
+  background-image: url(../images/zumba.jpg);
 }
 
 main section .zumba:hover {
-  background-image: url(../images/);
+  background-image: url();
 }
 
 main section .prox {
   background: black;
   opacity: 0.75;
+  margin-bottom: 1.8rem;
 }
 
 main section .prox:hover {
@@ -349,16 +392,25 @@ main section .prox:hover {
   }
   main section .actbox {
     margin: 0.5rem;
+    max-height: 135px;
+    min-height: 135px;
+  }
+  main section .col-11:hover {
+    max-height: 135px;
+    min-height: 135px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 988px) and (max-width: 768px) {
   main section .actbox {
     margin: 0.5rem;
   }
+  main section .prox {
+    margin-bottom: 1rem;
+  }
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 988px) and (max-width: 556px) {
   main section .h1A {
     font-size: 3rem;
   }
@@ -368,7 +420,7 @@ main section .prox:hover {
 }
 
 main div .s1-sedes {
-  background-image: url(../images/gym9.jpg);
+  background-image: url(../images/sarkogym-fondo2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -381,6 +433,18 @@ main div .h1Sn {
   text-shadow: 0.1em 0.1em 0.1em black;
 }
 
+main div .psedes {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.3rem;
+  text-align: justify;
+}
+
+main div .psedes strong {
+  font-weight: normal;
+}
+
 main div div h2 {
   font-size: 2.5rem;
   margin: 1.1rem;
@@ -389,6 +453,7 @@ main div div h2 {
 main div div .carousel {
   margin-bottom: 2%;
   margin-top: 2%;
+  border: white solid 2px;
 }
 
 @media screen and (max-width: 675px) {
@@ -406,7 +471,7 @@ main div div .carousel {
 }
 
 main div .s1-sobreN {
-  background-image: url(../images/gym9.jpg);
+  background-image: url(../images/sarkogym-fondo2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,19 +495,37 @@ main .rowHistoria {
   flex-flow: column wrap;
 }
 
-main .rowHistoria article .h2Sn {
+main .rowHistoria .h2Sn {
   text-align: center;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
-main .rowHistoria article .psnh {
+main .rowHistoria div {
+  align-items: center;
+}
+
+main .rowHistoria div article .psnh {
   color: white;
   font-size: 1.2rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 4%;
   margin-bottom: 2%;
   text-align: justify;
+}
+
+main .rowHistoria div article .psnh strong {
+  font-weight: normal;
+}
+
+main .rowHistoria div aside {
+  margin-bottom: 2%;
+  margin-top: 1%;
+  text-align: center;
+}
+
+main .rowHistoria div aside .fotoSN {
+  width: 27vw;
 }
 
 @media screen and (max-width: 1160px) {
@@ -462,8 +545,14 @@ main .rowHistoria article .psnh {
   }
 }
 
+@media screen and (max-width: 988px) {
+  main .rowHistoria div aside .fotoSN {
+    width: 85vw;
+  }
+}
+
 main div .s1-act {
-  background-image: url(../images/gym9.jpg);
+  background-image: url(../images/sarkogym-fondo2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -501,7 +590,7 @@ main div section .ulC {
 }
 
 main form {
-  background-color: rgba(255, 255, 255, 0.021);
+  border-top: 3px solid white;
 }
 
 main form .col-12 {
@@ -548,8 +637,58 @@ main form div input {
   }
 }
 
+main .error {
+  height: 60vh;
+}
+
+main .error .p404 {
+  color: white;
+  text-align: center;
+}
+
+main .error .h1404 {
+  text-align: center;
+  margin-top: 40vh;
+}
+
+@media screen and (max-width: 815px) {
+  main .error .p404 {
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  main .error .h1404 {
+    font-size: 3rem;
+  }
+}
+
 footer {
   border-top: 3px solid white;
+}
+
+footer .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 2px 2px #999;
+  z-index: 100;
+}
+
+footer .float .my-float {
+  margin-top: 16px;
+}
+
+footer .float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
 }
 
 footer .menu-redes {
@@ -560,43 +699,48 @@ footer .menu-redes {
   justify-content: center;
 }
 
-footer .menu-redes .btn-whatsapp {
-  display: block;
-  width: 70px;
-  height: 70px;
-  color: #fff;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  line-height: 80px;
-  text-align: center;
-  z-index: 999;
-}
-
-footer .menu-redes .btn-whatsapp .whatsapp {
-  width: 70px;
-}
-
-footer .menu-redes .menuliR {
+footer .menuliR {
   display: inline-block;
   margin: 0.75rem;
 }
 
-footer .menu-redes .menuliR .imgredes {
-  width: 50px;
+footer .menuliR .imgredes {
+  width: 40px;
 }
 
 @media screen and (max-width: 370px) {
   footer .menu-redes .menuliR .imgredes {
-    width: 45px;
+    width: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  footer .float {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 35px;
+  }
+  footer .float .my-float {
+    margin-top: 11px;
+  }
   footer .menu-redes {
-    justify-content: space-around;
     margin-right: 9%;
   }
+  footer .menu-redes .menuliR .imgredes {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  footer .menu-redes {
+    justify-content: space-around;
+  }
+}
+
+body {
+  background-color: #1d1e22;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 988px) {

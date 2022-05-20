@@ -1,7 +1,11 @@
 $color-form: rgba(255, 255, 255, 0.021);
-$imagen-act: url(../images/gymact.jpg);
+$texto: 1.2rem;
+$fondoLayer: #FFCE1A;
+$sombra: 0.1em 0.1em 0.1em black;
+$bodycolor: #1d1e22;
+$bordercolor: white;
 
-@mixin fondo-main-inicio($imagen-fondos: url(../images/gym9.jpg)){
+@mixin fondo-main-inicio($imagen-fondos: url(../images/sarkogym-fondo2.jpg)){
     background-image: $imagen-fondos;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -14,5 +18,5 @@ $imagen-act: url(../images/gymact.jpg);
 .fondosMainNoIndex{
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }

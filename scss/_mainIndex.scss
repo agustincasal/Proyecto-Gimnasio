@@ -1,10 +1,10 @@
 main{
     div{
         .s1-index{
-            @include fondo-main-inicio($imagen-fondos: url(../images/gym8.jpg));
+            @include fondo-main-inicio($imagen-fondos: url(../images/sarkogym-fondo1.jpg));
 
         .h1I{
-            text-shadow: 0.1em 0.1em 0.1em black;
+            text-shadow: $sombra;
         }
         }
     }
@@ -26,20 +26,56 @@ main{
                     .card-body{
                         padding: 0;
 
+                        .layer {
+                            position: absolute;
+                            background: $fondoLayer;
+                            top: 0;
+                            height: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            opacity: 0;
+
+                            &:hover{
+                                opacity: 0.92;
+                                height: 100%;
+                                transition: all 550ms;  
+                            }
+
+                            span{
+                                font-size: 0.75em;
+                            }
+
+                            h3{
+                                opacity: 1;
+                                font-size: 4em;
+                                font-weight: 600;
+                                color: black;
+                                width: 90%;
+                                margin: 80px auto 0px;
+                                border-bottom: 0;
+                                padding-bottom: 40px;
+                                padding-top: 100px;
+                            }
+                        }
+
                         .card-title{
                             border-bottom: 6px black solid;
                             padding-bottom: 0.5rem;
                             padding-top: 0.5rem;
+                            strong{
+                                font-weight: normal;
+                            }
                         }
                         
                         .list-group{
                             display: block;
 
                             .list-group-item{
-                                border: 0px solid black;
+                                border: 0px;
                                 background-color: #212529;
                                 color: white;
-                                font-size: 1.1rem;
+                                font-size: $texto;
                             }
                         }                       
                     }

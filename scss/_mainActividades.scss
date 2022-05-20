@@ -5,7 +5,7 @@ main{
             @extend .fondosMainNoIndex;
         }
         .h1A{
-            text-shadow: 0.1em 0.1em 0.1em black;
+            text-shadow: $sombra;
             text-align: center;
             margin-left: 5%;
             margin-right: 5%;
@@ -18,17 +18,16 @@ main{
             flex-flow: column wrap;
             justify-content: center;
             align-items: center;
-            border: white solid 3px;
+            border: $bordercolor solid 3px;
             margin: 1.7rem;
             color: white;
             padding: 3%;
-            background-image: $imagen-act;
-            background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
-            
+
             h2{
                 font-size: 3rem;
-                text-shadow: 0.1em 0.1em 0.1em black;
+                text-shadow: $sombra;
             }
 
             .pacts{
@@ -38,9 +37,9 @@ main{
 
             &:hover{
                 transform: rotatey(180deg) scale(1.05, 1.05);
-                transition-duration: 1s;
+                transition-duration: 1.5s;
                 background-color: black;
-                
+            
                 .h2display{
                     display: none;
                 }
@@ -53,72 +52,82 @@ main{
             } 
         }
 
-        .musculacion{
-            background-image: url(../images/musculaciongg.jpg);
+        .col-11{
+            max-height: 180px;
+            min-height: 180px;
             &:hover{
-                background-image: url(../images/);
+                max-height: 180px;
+                min-height: 180px;
+            }
+        }
+
+        .musculacion{
+            background-image: url(../images/musculacion.jpg);
+            &:hover{
+                background-image: url();
             }
         }
 
         .crossfit{
-            background-image: url(../images/crossfitgg.jpg);
+            background-image: url(../images/crossfit.jpg);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         } 
 
         .boxeo{
-            background-image: url(../images/boxeogg.jpg);
+            background-image: url(../images/boxeo.jpg);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         } 
 
         .cycling{
-            background-image: url(../images/cyclinggg.jpg);
+            background-image: url(../images/cycling.jpg);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         } 
 
         .funcional{
             background-image: url(../images/funcional.webp);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         } 
 
         .running{
-            background-image: url(../images/runninggg.jpg);
+            background-image: url(../images/running.jpg);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         }
 
         .bodypump{
-            background-image: url(../images/bodypumpgg.jpg);
+            background-image: url(../images/bodypump.jpg);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         } 
 
         .pilates{
-            background-image: url(../images/pilatesgg.jpg);
+            background-image: url(../images/pilates.jpg);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         }
 
         .zumba{
-            background-image: url(../images/zumbagg.jpg);
+            background-image: url(../images/zumba.jpg);
             &:hover{
-                background-image: url(../images/);
+                background-image: url();
             }
         }
 
         .prox{
             background: black;
             opacity: 0.75;
+            margin-bottom: 1.8rem;
             &:hover{
                 opacity: 1;
                 transform: rotatey(0deg) scale(1.05, 1.05);
@@ -140,10 +149,16 @@ main{
         section{
             .actbox{
                 margin: 0.5rem;
+                max-height: 135px;
+                min-height: 135px;
+            }
+            .col-11{
+                &:hover{
+                    max-height: 135px;
+                    min-height: 135px;
             }
         }
-    }
-    
+    }  
 }
 
 @media screen and (max-width: 768px){
@@ -152,6 +167,9 @@ main{
         section{
             .actbox{
                 margin: 0.5rem;
+            }
+            .prox{
+                margin-bottom: 1rem;
             }
         }
     }
@@ -171,4 +189,5 @@ main{
             }
         }
     }
+}
 }
