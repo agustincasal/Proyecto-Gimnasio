@@ -434,6 +434,7 @@ main div .h1Sn {
 }
 
 main div .psedes {
+  user-select: text;
   color: white;
   font-size: 1.2rem;
   margin-top: 0.8rem;
@@ -506,6 +507,7 @@ main .rowHistoria div {
 }
 
 main .rowHistoria div article .psnh {
+  user-select: text;
   color: white;
   font-size: 1.2rem;
   margin-left: 2%;
@@ -750,6 +752,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    user-select: none;
+  }
   h1 {
     text-align: center;
   }
