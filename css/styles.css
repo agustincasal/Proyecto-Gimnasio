@@ -613,6 +613,11 @@ main form div {
 
 main form div input {
   height: 3rem;
+  background-color: white;
+}
+
+main form div textarea {
+  background-color: white;
 }
 
 @media screen and (max-width: 988px) {
